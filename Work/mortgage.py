@@ -31,9 +31,11 @@ while principal > 0:
         total_paid = total_paid + principal
         principal = principal - principal
 
-    print(month,total_paid, principal,)
-    
-
+    #print(month,total_paid, principal,)
+    roundPrinc = round(principal,2)
+    roundTotal = round(total_paid,2)
+    sen = f'Month {month}, total paid is {roundTotal}, and loan amount is {roundPrinc}'
+    print(sen)
 ''' bool ('false') Evaluates to  True becuase a string is present 
 
 If the string were empty then converting it to a Bool as in:
